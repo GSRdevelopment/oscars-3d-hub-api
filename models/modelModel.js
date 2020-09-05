@@ -13,11 +13,11 @@ const modelSchema = new mongoose.Schema({
   },
   modelClassification: {
     type: String,
-    required: true,
+    required: false,
   },
   modelFormats: {
     type: [String],
-    required: true,
+    required: false,
   },
   modelPrice: {
     type: Number,
@@ -25,7 +25,7 @@ const modelSchema = new mongoose.Schema({
   },
   modelImages: {
     type: [String],
-    required: true,
+    required: false,
   },
 });
 
