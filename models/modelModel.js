@@ -27,6 +27,10 @@ const modelSchema = new mongoose.Schema({
     type: [String],
     required: false,
   },
+  modelPreview: {
+    type: String,
+    required: false,
+  },
 });
 
 const Model = mongoose.model('Model', modelSchema);
